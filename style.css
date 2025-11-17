@@ -74,27 +74,34 @@ header {
   align-items: center;
 }
 
+/* ========== DEFAULT (Desktop) ========== */
 .logo {
-  width: 200px;
+  width: 260px;          /* Desktop size */
   display: block;
   margin: 0 auto;
   transition: 0.3s ease;
 }
 
-
-
-/* Responsive Navbar */
+/* ========== TABLET (max-width: 900px) ========== */
 @media (max-width: 900px) {
   .logo {
-    width: 170px;
+    width: 230px;        /* Tablet size */
   }
 }
 
+/* ========== MOBILE (max-width: 600px) ========== */
 @media (max-width: 600px) {
   .logo {
-    width: 150px !important;
+    width: 190px !important;   /* Mobile size */
   }
 }
+
+/* Hover glow effect */
+.logo:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #00e5ff);
+}
+
 
 /* ========== HERO (MATCH SECOND CARD SIZE) ========== */
 .hero {
@@ -1181,7 +1188,7 @@ html, body {
 /* Mobile size */
 @media (max-width: 768px) {
   .hero-text h1 {
-    font-size: 16px !important;   /* SMALL SIZE FOR MOBILE */
+    font-size: 15px !important;   /* SMALL SIZE FOR MOBILE */
     line-height: 1.25;
   }
 }
